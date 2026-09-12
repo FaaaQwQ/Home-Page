@@ -1,0 +1,11 @@
+@font-face{font-family:'Fira Code';src:url('../assets/FiraCode-Regular.woff2') format('woff2');font-display:swap}
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:#abb2bf;font:14px/1.6 'Fira Code','Microsoft YaHei',monospace;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid #56b6c2;outline-offset:5px}
+.titlebar{position:sticky;top:0;height:30px;background:#1e1e1e;border-bottom:1px solid #ffffff1a;display:flex;justify-content:center;align-items:center;z-index:2;font:13px 'Segoe UI',sans-serif;color:#ccc;letter-spacing:.5px}
+.window-controls{position:absolute;left:10px;display:flex;gap:6px;padding:4px 0}.window-controls span{width:12px;height:12px;border-radius:50%}.red{background:#ff5f56}.yellow{background:#ffbd2e}.green{background:#27c93f}
+main{position:relative;max-width:1060px;margin:auto;padding:10px 32px 28px}nav{display:flex;margin-bottom:12px}.back:hover{color:#fff}
+.heading{display:flex;align-items:flex-end;gap:24px;margin-bottom:12px}.updated{font-size:12px;margin:0;color:#8a929f}.updated time{color:#98c379;margin-left:8px}.format{margin-left:22px}
+.download{position:absolute;top:22px;right:32px;display:inline-block;white-space:nowrap;border:1px solid #56b6c266;border-radius:5px;background:#56b6c212;color:#56b6c2;padding:11px 17px}.download:hover{background:#56b6c22b;border-color:#56b6c2}
+.document{margin:0;border:1px solid #ffffff24;border-radius:6px;overflow:hidden;background:#161616}.document img{display:block;width:100%;height:auto;background:#fff}
+@media(max-width:600px){main{padding:16px 16px 24px}nav{margin-bottom:14px}.heading{align-items:flex-start;flex-direction:column;gap:16px}.format{display:block;margin:5px 0 0}.download{position:static;width:100%;height:auto;justify-content:center;text-align:center}}

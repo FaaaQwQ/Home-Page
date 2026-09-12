@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZLWH / About</title>
+  <link rel="stylesheet" href="about.css">
+  <script src="about.js" defer></script>
+</head>
+<body>
+  <header class="titlebar">
+    <div class="controls">
+      <a class="dot red" href="../index.html#about-return" aria-label="Return home" title="Return home"></a>
+      <button class="dot yellow" aria-label="Minimize terminal" title="Minimize terminal"></button>
+      <button class="dot green" aria-label="Restore terminal" title="Restore terminal"></button>
+    </div>
+    <h1>About</h1>
+  </header>
+  <main id="terminal">
+    <div id="output" role="log" aria-live="polite" aria-label="Terminal output"></div>
+    <form id="command-form" autocomplete="off">
+      <label for="command">➜ About</label>
+      <span id="loading" hidden role="status" aria-label="Loading">.</span>
+      <span id="input-wrap">
+        <input id="command" name="command" aria-label="Terminal command" spellcheck="false" autocapitalize="off" autofocus>
+        <span id="cursor" aria-hidden="true"></span>
+        <span id="cursor-measure" aria-hidden="true"></span>
+      </span>
+    </form>
+  </main>
+</body>
+</html>
